@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: argo
+  labels:
+    role: argo
+spec:
+  containers:
+  - name: rhel
+    image: docker-registry.default.svc:5000/openshift/rhel:latest
+    args:
+    - "100000"
+    command:
+    - sleep
+    resources:
+      requests:
+        cpu: 150m
+        memory: 128Mi
