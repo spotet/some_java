@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: argo
   labels:
-    role: argo
+    role: argo2
 spec:
   containers:
   - name: rhel
