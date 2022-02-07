@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: rhel
-    image: docker-registry.default.svc:5000/openshift/rhel:latest
+    image: docker-registry.default.svc:5000/openshift/rhel@sha256:44a0305ffa52067e9fa02fa4c6ab9659313955999585218f9de505702d0d5ae9
     args:
     - "100000"
     command:
